@@ -38,7 +38,7 @@ await taxonomy.termStores.get();
 
 ## Setup
 
-Because the sp-taxonomy library uses the same @pnp/odata request pipeline as the other libraries you can call the setup method with the same options used for the @pnp/sp library. The setup method is provided as shorthand and avoids the need to import anything from @pnp/sp if you do not need to. A call to this setup method is equivilent to calling the sp.setup method and the configuration is shared between the libraries within your application.
+Because the sp-taxonomy library uses the same @pnp/odata request pipeline as the other libraries, you can call the setup method with the same options used for the @pnp/sp library. The setup method is provided as shorthand and avoids the need to import anything from @pnp/sp if you do not need to. A call to this setup method is equivalent to calling the sp.setup method and the configuration is shared between the libraries within your application.
 
 In the below example all requests for the @pnp/sp-taxonomy library _and_ the @pnp/sp library will be routed through the specified SPFetchClient. Sharing the configuration like this handles the most common scenario of working on the same web easily. You can set other values here as well such as baseUrl and they will be respected by both libraries.
 
